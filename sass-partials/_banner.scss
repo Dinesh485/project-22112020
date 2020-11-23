@@ -1,0 +1,103 @@
+.banner{
+  background: linear-gradient(180deg, #EAF8FF 0%, #F6F6FF 100%);
+  padding: 20px 0 100px;
+  .wrapper{
+    .main{
+      display:grid;
+      .banner-img{
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      .content{
+        >div{
+          margin-bottom: 20px;
+        }
+        .title{
+          font-size: 2rem;
+          font-weight: bold;
+          color:rgb(18, 36, 85);
+        }
+        .subtitle{
+          color:gray;
+        
+        }
+        .banner-btn{
+          display: block;
+          padding: 15px;
+          padding-right: 60px;
+          border: 2px solid rgb(18, 36, 85);
+          width: fit-content;
+          background: white;
+          font-weight: bold;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: 762px){
+  .banner{
+    .wrapper{
+      .main{
+         grid-template-columns: 7fr 5fr;
+         align-items: center;
+         grid-gap: 40px;
+         margin-top: 40px;
+         .banner-img{
+           order: 2;
+           margin: 0;
+         }
+         .content{
+           
+           .title{
+             font-size: 2.8rem;
+             
+           }
+           .subtitle{
+             font-size: 1.4rem;
+           }
+         }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 992px){
+  .banner{
+    .wrapper{
+      .main{
+           
+         .content{
+           >div{
+             margin-bottom: 30px;
+           }
+           .title{
+             font-size: 3.5rem;
+             
+           }
+           .subtitle{
+            
+           }
+         }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1200px){
+  .banner{
+    .wrapper{
+      .main{
+           
+         .content{
+           
+           .title{
+             font-size: 4.7rem;
+             
+           }
+           
+         }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+@import './sass-partials/nav';
+@import './sass-partials/banner';
+@import './sass-partials/services';
