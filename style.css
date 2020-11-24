@@ -754,8 +754,8 @@ nav > div {
   top: -14%;
   background: -webkit-gradient(linear, left top, left bottom, from(#EBFFFD), to(#EFEEFA));
   background: linear-gradient(180deg, #EBFFFD 0%, #EFEEFA 100%);
-  -webkit-transform: perspective(400px) rotateY(-30deg);
-          transform: perspective(400px) rotateY(-30deg);
+  -webkit-transform: perspective(400px) rotateY(-25deg);
+          transform: perspective(400px) rotateY(-25deg);
 }
 
 .services .wrapper .cards .card .card-title {
@@ -809,6 +809,9 @@ nav > div {
   .services {
     padding: 130px 0;
   }
+  .services .wrapper .header {
+    margin-bottom: 70px;
+  }
   .services .wrapper .header .title {
     font-size: 2.7rem;
     margin-bottom: 30px;
@@ -822,6 +825,134 @@ nav > div {
   .services .wrapper .cards {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+  }
+  .services .wrapper .cards .card .icon {
+    margin-bottom: 30px;
+  }
+}
+
+.case-study {
+  background: #FAFAFB;
+  padding: 70px 0;
+}
+
+.case-study .wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.case-study .wrapper .main {
+  display: -ms-grid;
+  display: grid;
+}
+
+.case-study .wrapper .main .banner-img {
+  width: 100%;
+  margin-bottom: 30px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.case-study .wrapper .main .content .tag {
+  background: rgba(0, 207, 255, 0.1);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  color: #00CFFF;
+  font-weight: 400;
+}
+
+.case-study .wrapper .main .content > div {
+  margin-bottom: 20px;
+}
+
+.case-study .wrapper .main .content .title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #122455;
+}
+
+.case-study .wrapper .main .content .subtitle {
+  color: gray;
+}
+
+.case-study .wrapper .main .content .banner-btn {
+  display: block;
+  padding: 15px;
+  padding-right: 60px;
+  border: 2px solid #122455;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: .9rem;
+  margin-bottom: 20px;
+}
+
+.case-study .wrapper .main .content .counter-ups {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.case-study .wrapper .main .content .counter-ups > div {
+  margin-right: 20px;
+}
+
+.case-study .wrapper .main .content .counter-ups > div h3 {
+  font-size: 2.2rem;
+  color: #702FFF;
+}
+
+.case-study .wrapper .main .content .counter-ups > div h3 span {
+  color: inherit;
+}
+
+@media only screen and (min-width: 762px) {
+  .case-study .wrapper .main {
+    -ms-grid-columns: 7fr 5fr;
+        grid-template-columns: 7fr 5fr;
+    grid-gap: 40px;
+    margin-top: 40px;
+  }
+  .case-study .wrapper .main .banner-img {
+    margin: 0;
+  }
+  .case-study .wrapper .main .content .title {
+    font-size: 2.4rem;
+  }
+  .case-study .wrapper .main .content .subtitle {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .case-study .wrapper .main .content > div {
+    margin-bottom: 30px;
+  }
+  .case-study .wrapper .main .content .title {
+    font-size: 3rem;
+  }
+  .case-study .wrapper .main .content .banner-btn {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .case-study .wrapper .main {
+    grid-gap: 8%;
+  }
+  .case-study .wrapper .main .content .title {
+    font-size: 3.4rem;
+  }
+  .case-study .wrapper .main .content .banner-btn {
+    margin-bottom: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */

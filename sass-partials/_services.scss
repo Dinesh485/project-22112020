@@ -61,7 +61,7 @@
             right: 47%;
             top: -14%;
             background: linear-gradient(180deg, #EBFFFD 0%, #EFEEFA 100%);;
-            transform : perspective(400px) rotateY(-30deg);
+            transform : perspective(400px) rotateY(-25deg);
           
           }
         }
@@ -122,6 +122,7 @@
     padding: 130px 0;
     .wrapper{
       .header{
+        margin-bottom: 70px;
         .title{
           font-size: 2.7rem;
           margin-bottom: 30px;
@@ -135,6 +136,12 @@
       }
       .cards{
         grid-template-columns: 1fr 1fr 1fr;
+        .card{
+          .icon{
+            margin-bottom: 30px;
+          }
+          
+        }
       }
     }
   }
