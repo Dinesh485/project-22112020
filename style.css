@@ -913,6 +913,23 @@ nav > div {
   color: inherit;
 }
 
+.case-study .wrapper .carousal {
+  position: relative;
+}
+
+.case-study .wrapper .carousal .slick-dots {
+  position: absolute;
+  left: 0px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.case-study .wrapper .carousal .slick-dots li button:before {
+  color: #702FFF;
+  font-size: .8rem;
+}
+
 @media only screen and (min-width: 762px) {
   .case-study .wrapper .main {
     -ms-grid-columns: 7fr 5fr;
@@ -942,6 +959,10 @@ nav > div {
   .case-study .wrapper .main .content .banner-btn {
     margin-bottom: 30px;
   }
+  .case-study .wrapper .carousal .slick-dots {
+    left: 50%;
+    bottom: -50px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -953,6 +974,202 @@ nav > div {
   }
   .case-study .wrapper .main .content .banner-btn {
     margin-bottom: 40px;
+  }
+  .case-study .wrapper .carousal .slick-dots {
+    left: 60%;
+    bottom: 0px;
+  }
+}
+
+.about-us {
+  background: white;
+  padding: 70px 0;
+}
+
+.about-us .wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: -ms-grid;
+  display: grid;
+}
+
+.about-us .wrapper .content {
+  margin-bottom: 20px;
+}
+
+.about-us .wrapper .content .sub-title {
+  background: rgba(0, 208, 156, 0.1);
+  color: #00D09C;
+  padding: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.about-us .wrapper .content .title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-us .wrapper .content .description {
+  color: gray;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.about-us .wrapper .contact-form {
+  max-width: 490px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.about-us .wrapper .contact-form .inner h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.about-us .wrapper .contact-form .inner form {
+  margin-bottom: 20px;
+}
+
+.about-us .wrapper .contact-form .inner form .input-groupe {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.about-us .wrapper .contact-form .inner form .input-groupe label {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  z-index: 10;
+  color: #757589;
+  font-size: 1.05rem;
+  -webkit-transition: font-size 200ms linear, -webkit-transform 200ms linear;
+  transition: font-size 200ms linear, -webkit-transform 200ms linear;
+  transition: transform 200ms linear, font-size 200ms linear;
+  transition: transform 200ms linear, font-size 200ms linear, -webkit-transform 200ms linear;
+}
+
+.about-us .wrapper .contact-form .inner form .input-groupe input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #C7C7D5;
+  padding: 10px 0;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+.about-us .wrapper .contact-form .inner form .input-groupe input:focus + label {
+  -webkit-transform: translateY(-13px);
+          transform: translateY(-13px);
+  font-size: 12px;
+  color: #702FFF;
+}
+
+.about-us .wrapper .contact-form .inner form .input-groupe input:focus {
+  border-bottom: 2px solid #702FFF;
+}
+
+.about-us .wrapper .contact-form .inner form button {
+  display: block;
+  border: 2px solid black;
+  width: 100%;
+  background: none;
+  outline: none;
+  padding: 13px 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.about-us .wrapper .contact-form .inner p {
+  text-align: center;
+  color: gray;
+  position: relative;
+  z-index: 10;
+}
+
+.about-us .wrapper .contact-form .inner p span {
+  margin-left: 10px;
+  font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 762px) {
+  .about-us .wrapper .content {
+    margin-bottom: 50px;
+  }
+  .about-us .wrapper .content .title {
+    font-size: 2.2rem;
+  }
+  .about-us .wrapper .content .description {
+    font-size: 1.1rem;
+  }
+  .about-us .wrapper .contact-form {
+    position: relative;
+    padding: 50px 70px;
+  }
+  .about-us .wrapper .contact-form .inner h2 {
+    font-size: 2rem;
+    position: relative;
+    z-index: 10;
+  }
+  .about-us .wrapper .contact-form .inner form {
+    position: relative;
+    margin-bottom: 40px;
+    z-index: 10;
+  }
+  .about-us .wrapper .contact-form .inner form .input-groupe {
+    margin-bottom: 30px;
+  }
+  .about-us .wrapper .contact-form:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    top: 0;
+    left: 0;
+    -webkit-box-shadow: -40px 0 40px rgba(211, 211, 211, 0.507);
+            box-shadow: -40px 0 40px rgba(211, 211, 211, 0.507);
+    -webkit-transform: perspective(400px) rotateY(-4deg);
+            transform: perspective(400px) rotateY(-4deg);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .about-us {
+    padding: 130px 0;
+  }
+  .about-us .wrapper {
+    -ms-grid-columns: 6fr 6fr;
+        grid-template-columns: 6fr 6fr;
+    grid-gap: 50px;
+  }
+  .about-us .wrapper .content .title {
+    font-size: 2.5rem;
+  }
+  .about-us .wrapper .content .description {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-us .wrapper .content {
+    margin-right: 100px;
+  }
+  .about-us .wrapper .content .title {
+    font-size: 2.8rem;
+  }
+  .about-us .wrapper .content .description {
+    font-size: 1.3rem;
+  }
+  .about-us .wrapper .contact-form .inner h2 {
+    font-size: 2.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

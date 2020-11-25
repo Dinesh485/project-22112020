@@ -1,0 +1,188 @@
+.about-us{
+  background: white;
+  padding: 70px 0;
+  .wrapper{
+     width: 90%;
+     margin: 0 auto;
+     max-width: 1200px;
+     display: grid;
+     .content{
+       margin-bottom: 20px;
+       .sub-title{
+         background: rgba(0, 208, 156, 0.1);
+         color: #00D09C ;
+         padding: 5px;
+         width: fit-content;
+         margin-bottom: 20px;
+
+       }
+       .title{
+         font-size: 1.8rem;
+         font-weight: bold;
+         margin-bottom: 20px;
+       }
+       .description {
+         color: gray;
+         margin-bottom: 20px;
+         line-height: 1.5;
+       }
+     }
+     .contact-form {
+       max-width: 490px;
+       padding: 20px;
+       box-sizing: border-box;
+        .inner{
+           h2{
+             font-size: 1.5rem;
+             margin-bottom: 20px;
+           }
+           form{
+             margin-bottom: 20px;
+            .input-groupe{
+              position: relative;
+              margin-bottom: 30px;
+              label{
+              position: absolute;
+              top: 9px;
+              left: 0;
+              z-index: 10;
+              color: #757589;
+              font-size: 1.05rem;
+              transition: transform 200ms linear, font-size 200ms linear, ;
+              }
+              input{
+              width: 100%;
+              border: none;
+              border-bottom: 2px solid #C7C7D5;
+              padding: 10px 0;
+              transform-origin: top left ;
+               outline: none;
+               font-size: 1.5rem;
+              
+              }
+              input:focus+label{
+                transform: translateY(-13px);
+                font-size: 12px;
+                color: #702FFF;
+              }
+              input:focus{
+                border-bottom: 2px solid #702FFF;
+              }
+            }
+           
+            
+            button{
+              display: block;
+              border: 2px solid black;
+              width: 100%;
+              background: none;
+              outline : none;
+              padding: 13px 0;
+              font-weight: bold;
+              font-size: 1.1rem;
+            }
+           }
+           p{
+             text-align: center;
+             color: gray;
+             position: relative;
+             z-index: 10;
+             span{
+               margin-left: 10px;
+               font-size: 1.1rem;
+             }
+           }
+        }
+     }
+  }
+}
+
+@media only screen and (min-width: 762px){
+  .about-us{
+    .wrapper{
+      .content{
+        margin-bottom: 50px;
+      .title{
+        font-size: 2.2rem;
+      }
+      .description{
+        font-size: 1.1rem;
+      }
+    }
+    .contact-form{
+      position: relative;
+      padding: 50px 70px;
+      .inner{
+        h2{
+        font-size: 2rem;
+        position: relative;
+        z-index: 10;
+      }
+      form{
+        position: relative;
+        margin-bottom: 40px;
+        z-index: 10;
+        .input-groupe{
+          margin-bottom: 30px;
+        }
+      }
+      }
+    }
+    .contact-form:after{
+      content: " ";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: white;
+      top: 0;
+      left: 0;
+      box-shadow: -40px 0 40px rgba(211, 211, 211, 0.507);
+      transform: perspective(400px) rotateY(-4deg);
+    }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .about-us{
+    padding: 130px 0;
+    .wrapper{
+      grid-template-columns: 6fr 6fr;
+      grid-gap: 50px;
+      .content{
+        
+        .title{
+          font-size: 2.5rem;
+        }
+        .description{
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1200px){
+  .about-us{
+   
+    .wrapper{
+     
+      .content{
+        margin-right: 100px;
+        .title{
+          font-size: 2.8rem;
+        }
+        .description{
+          font-size: 1.3rem;
+        }
+      }
+      .contact-form{
+        .inner{
+          h2{
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
