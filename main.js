@@ -45,6 +45,14 @@ $("document").ready(() => {
     slidsToShow: 1,
     dots: true,
   });
+
+  $('.testimonials .wrapper .main .card').hover( (e) => {
+    
+    $('.testimonials .wrapper .main .card').removeClass('testimonial-card-active');
+    $(e.target.parentNode).addClass("testimonial-card-active");
+  })
+
+
 })
 
 var acc = document.getElementsByClassName("menu-item");

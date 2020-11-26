@@ -1,0 +1,118 @@
+.contact{
+  padding: 50px 0;
+  background: linear-gradient(180deg, #EAF8FF 0%, #F6F6FF 100%);
+  .wrapper{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    .header{
+      text-align: center;
+      margin-bottom: 30px;
+       .subtitle{
+         background: rgba(0, 207, 255, 0.1);
+         color: #00CFFF  ;
+         padding: 5px;
+         width: fit-content;
+         margin: 0 auto;
+         margin-bottom: 20px;
+
+       }
+       .title{
+         font-size: 2rem;
+         font-weight: bold;
+         margin-bottom: 20px;
+         color: #000248;
+       }
+    }
+    .main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      a{
+        border: 2px solid #000248;
+        padding: 10px 25px;
+        margin-bottom: 20px;
+        background: white;
+        font-weight: bold;
+      }
+      >div{
+        
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        p{
+         color: gray;
+         margin-right: 10px;
+         height: fit-content;
+        }
+        span{
+         
+          font-size: 1.5rem;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          i{
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .contact{
+    padding: 100px 0;
+    .wrapper{
+      .header{
+        margin-bottom: 40px;
+        .title{
+          font-size: 2.5rem;
+        }
+      }
+      .main{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        a{
+          padding: 10px 40px;
+        }
+        >div{
+          font-size: 1.5rem;
+          p{
+            margin-right: 20px;
+          }
+          span{
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .contact{
+    padding: 130px 0;
+    .wrapper{
+      .header{
+        margin-bottom: 60px;
+        .title{
+          font-size: 3.3rem;
+        }
+      }
+      .main{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px;
+        margin-bottom: 60px;
+        
+      }
+      
+    }
+  }
+}
+
